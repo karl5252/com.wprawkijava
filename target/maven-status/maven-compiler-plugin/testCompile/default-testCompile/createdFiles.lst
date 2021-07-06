@@ -1,0 +1,8 @@
+order\OrderTest.class
+com\wprawkijava\MealTest.class
+order\OrderStatusTest.class
+com\wprawkijava\AccountTest.class
+order\OrderBackupExecutionOrderTest.class
+com\wprawkijava\AddressTest.class
+com\wprawkijava\CartTest.class
+order\OrderBackupTest.class

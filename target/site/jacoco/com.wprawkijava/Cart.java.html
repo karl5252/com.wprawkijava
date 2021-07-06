@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pl"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Cart.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">unit-testy</a> &gt; <a href="index.source.html" class="el_package">com.wprawkijava</a> &gt; <span class="el_source">Cart.java</span></div><h1>Cart.java</h1><pre class="source lang-java linenums">package com.wprawkijava;
+
+import order.Order;
+
+import java.util.ArrayList;
+import java.util.List;
+
+<span class="fc" id="L8">public class Cart {</span>
+<span class="fc" id="L9">    private List&lt;Order&gt; orders = new ArrayList&lt;&gt;();</span>
+
+    void addOrderToCart(Order order){
+<span class="fc" id="L12">        this.orders.add(order);</span>
+<span class="fc" id="L13">    }</span>
+    void clearCart(){
+<span class="nc" id="L15">        this.orders.clear();</span>
+<span class="nc" id="L16">    }</span>
+
+    public List&lt;Order&gt; getOrders() {
+<span class="fc" id="L19">        return orders;</span>
+    }
+
+    void simulateLargeOrders(){
+<span class="fc bfc" id="L23" title="All 2 branches covered.">        for (int i = 0; i &lt; 1_000; i++){</span>
+<span class="fc" id="L24">            Meal meal = new Meal(i%10, &quot;Sushi piece &quot; + i);</span>
+<span class="fc" id="L25">            Order order = new Order();</span>
+<span class="fc" id="L26">            order.addMealToTheList(meal);</span>
+<span class="fc" id="L27">            addOrderToCart(order);</span>
+        }
+
+<span class="fc" id="L30">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
