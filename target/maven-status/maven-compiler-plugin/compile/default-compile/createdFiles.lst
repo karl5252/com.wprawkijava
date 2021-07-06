@@ -1,0 +1,9 @@
+order\OrderStatus.class
+com\wprawkijava\Address.class
+com\wprawkijava\extensions\IAExceptionIgnoreExtension.class
+com\wprawkijava\Account.class
+com\wprawkijava\Meal.class
+com\wprawkijava\Cart.class
+order\Order.class
+order\OrderBackup.class
+com\wprawkijava\extensions\BeforeAfterExtension.class
